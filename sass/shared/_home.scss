@@ -645,8 +645,8 @@
                 @include respondToBelow(sm) {
                   background-size: 70%;
                 }
-                &.jfrog {
-                  background-image: url(../images/spons/jfrog.png);
+                &.agilisium {
+                  background-image: url(../images/spons/agilisium.png);
                 }
                 &.hotstar {
                   background-image: url(../images/spons/hotstar.png);
@@ -654,8 +654,8 @@
                 &.intel {
                   background-image: url(../images/spons/intel.png);
                 }
-                &.wheelsbox {
-                  background-image: url(../images/spons/wheelsbox.png);
+                &.clockwork {
+                  background-image: url(../images/spons/clockwork.png);
                 }
                 &.moengage {
                   background-image: url(../images/spons/moengage.png);
@@ -861,16 +861,16 @@
               font-size: 12px;
             }
           }
-          &[data-fname="Jeevan"] .img {
-            background-image: url(../images/vols/jeevan.jpg);
+          &[data-fname="Parthasarathi"] .img {
+            background-image: url(../images/vols/partha.jpg);
           }
-          &[data-fname="Sathyajith"] .img {
-            background-image: url(../images/vols/sathya.png);
+          &[data-fname="Swaminathan"] .img {
+            background-image: url(../images/vols/swami.png);
           }
           &[data-fname="Runcy"] .img {
             background-image: url(../images/vols/runcy.jpg);
           }
-          &[data-fname="Prashanth"] .img {
+          &[data-fname="Ragunathan"] .img {
             background-image: url(../images/vols/prashanth.png);
           }
           &[data-fname="Krishna"] .img {
@@ -894,8 +894,8 @@
           &[data-fname="Akhil"] .img {
             background-image: url(../images/vols/akhil.jpg);
           }
-          &[data-fname="Bhuvaneswari"] .img {
-            background-image: url(../images/vols/bhuvaneswari.jpg);
+          &[data-fname="Ilanchezhian"] .img {
+            background-image: url(../images/vols/ilan.jpg);
           }
           &[data-fname="Praveen"] .img {
             background-image: url(../images/vols/veen.jpg);
@@ -909,8 +909,8 @@
           &[data-fname="Ganesh"] .img {
             background-image: url(../images/vols/ganesh.jpg);
           }
-          &[data-fname="Kaivalya"] .img {
-            background-image: url(../images/vols/kaivalya.jpg);
+          &[data-fname="Hemamalini"] .img {
+            background-image: url(../images/vols/hemamalini.jpg);
           }
         }
       }
