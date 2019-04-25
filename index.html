@@ -1,750 +1,946 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>AWS Community Day 2019</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="images/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="js/site.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link
-      href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+	<meta name="google-site-verification" content="Rk5wzEFDvIE7-_Y9fmz0NTWoLwZwNwSeSPKcTsdFNqM"/>
+	<title>AWS Community Day 2019</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
+	<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+	      integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+	      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"
+	></script>
+	<script type="text/javascript" src="js/site.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link
+			href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+			rel="stylesheet"
+	/>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+	<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css"/>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123754553-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+	<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
+	<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+	></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123754553-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-123754553-1');
-      </script>
-  </head>
-  <body>
-    <div id="page">
-      <div class="section section-1 hdr">
-        <div class="content" id="main-banner">
-          <div class="container">
-            <div>
-              <div wid="80%" class="centered">
-                <div class="left_in">
-                  <img src="images/logo.png" />
-                  <div class="txt">
-                    <h4 class="headin-ttl">
-                      24th August 2019, Chennai
-                    </h4>
-                    <p>
-                      AWS Users Group Chennai is back with a bang to host the
-                      most awaited event, AWS Community Day Chennai 2019,
-                      unveiling success stories, use cases & much more from
-                      industry leaders.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="nav-bar">
-          <p id="toggle"><span></span></p>
-          <li class="spec">
-            <a href="#">Registration Opening Soon</a>
-          </li>
-          <ul>
-            <li>
-              <a href="#com_info">About Community Day</a>
-            </li>
-            <li>
-              <a href="#venues">Venues</a>
-            </li>
-            <li>
-              <a href="#agenda">Agenda</a>
-            </li>
-            <li>
-                <a href="#cfp">CFP</a>
-            </li>
-            <li>
-              <a href="#sponsors">Sponsors</a>
-            </li>
-            <li>
-              <a href="#speakers">Speakers</a>
-            </li>
-            <li>
-              <a href="#volunteers">Volunteers</a>
-            </li>
-            <li>
-              <a href="#subscribe" id="sub-button" class="sub-button">
-                <i class="icon large ion-md-notifications-outline"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="section section-2">
-        <div class="container flex-it">
-          <div class="f1 left" id="com_info">
-            <div class="left_in">
-              <h4 class="headin-ttl">
-                WHO WE ARE?
-              </h4>
-              <p>
-                <b>AWSUGCHN</b> is a Chennai based group united by
-                community-led learnings and diversified by the wide variety of
-                tools and technologies closely knit with Amazon Web Services,
-                Cloud Computing Technology, AWS Design Implementation and
-                Servicing, High Scalability / Performance Computing, Production
-                use cases of AWS, Blockchain, Artificial Intelligence and much
-                more.
-              </p>
-              <p>
-                Community-based learning is the best way to enhance the concepts
-                being taught by connecting with enthusiasts in person, thereby
-                sharing first-hand experiences and familiar, accessible
-                examples.
-              </p>
-              <p>
-                All skills levels are welcome to help accomplish our motto of
-                learning, sharing and networking. Let us join hands to empower
-                this tech community to make it bigger and better!
-              </p>
-            </div>
-          </div>
-          <div class="f1 right" id="even_info">
-            <div class="right_in">
-              <h4 class="heading-ttl">
-                What to expect from AWS Community Day ?
-              </h4>
-              <ul class="circle">
-                <li>
-                  Renew, Revive & Revitalize to exemplify your excitement about
-                  the work you do
-                </li>
-                <li>
-                  Learn industry trends and intricacies about innovative
-                  implementations from AWS experts
-                </li>
-                <li>
-                  Harness the power of networking with 500+ AWS Users, DevOps,
-                  Developers & Solutions Architects
-                </li>
-                <li>
-                  Network with fellow AWS veterans & techies during breaks
-                </li>
-                <li>
-                  Novice to Pioneer on relentless pursuit to learn can rejoice
-                  the AWS offerings & success stories under one roof.
-                </li>
-                <li>Take helpful and valuable information back to business</li>
-                <li>
-                  Gain visibility to get more publicity for your esteemed
-                  organisation
-                </li>
-                <li>
-                  Sporting chance for active participants to win AWS goodies
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-3 text-center" id="cfp">
-        <div class="container">
-            <div class="cfp">
-              <h4 class="main-heading-ttl">Submit a talk</h4>
-                <a class="typeform-share button" href="https://awsugchn.typeform.com/to/UzKscX" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Propose a session </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-          </div>
-        </div>
-      </div>
-      <div class="section section-3" id="venues">
-        <div class="container flex-it">
-          <div class="left f1 flex-it">
-            <h4 class="headin-ttl">
-              Venue
-            </h4>
-            <div class="left_in f1">
-              <div id="map"></div>
-            </div>
-          </div>
-          <div class="right f1">
-            <div class="right_in">
-              <div
-                class="ven-1 ven active"
-                data-lat="13.0827"
-                data-lng="80.2707"
-                data-label="Chennai"
-              >
-                <div>
-                  <span style="font-size: 1.2vw;">24th August 2019</span>
-                  <h4 class="headin-ttl">Conference</h4>
-                  <ul>
-                    <li><b>Coming soon</b></li>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="marked"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-4" id="agenda">
-        <div class="container">
-          <div class="sponsors">
-            <h4 class="main-heading-ttl text-center">Agenda</h4>
-            <div class="text-center" style="font-size: 8vw; color: #ddd">
-              Coming soon
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-5" id="sponsors">
-        <div class="container">
-          <div class="sponsors">
-            <h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
-            <div class="text-center tmp" style="font-size: 1.5vw; color: #999">
-              <a target="_blank" href="/docs/sponsorship-deck.pdf"
-                >View our sponsorship deck</a
-              >
-              or email us at
-              <i><b style="font-size: 2vw; color: #000"><a href="mailto:info@awsugchn.in">info@awsugchn.in</a></b></i>
-            </div>
-            <div class="cats">
-              <div class="pltnm">
-                <div class="flex-it">
-                  <div class="fhf">
-                    <div class="head"><span>Platinum</span></div>
-                  </div>
-                  <div class="f1">
-                    <p class="text-center">Will be added shortly</p>
-                    <div class="jfrog hide"><a href="https://jfrog.com/" target="_blank">Jfrog</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="elastic hide"><a href="https://elastic.co" target="_blank">Elastic</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="intel hide"><a href="#">intel</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="gld">
-                <div class="flex-it">
-                  <div class="fhf">
-                    <div class="head"><span>Gold</span></div>
-                  </div>
-                  <div class="f1">
-                    <p class="text-center">Will be added shortly</p>
-                    <div class="moengage hide"><a href="#">moengage</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="swiggy hide"><a href="#">swiggy</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="elastic hide"><a href="#">elastic</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slvr">
-                <div class="flex-it">
-                  <div class="fhf">
-                    <div class="head"><span>Silver</span></div>
-                  </div>
-                  <div class="f1">
-                    <p class="text-center">Will be added shortly</p>
-                    <div class="sumologic hide"><a href="https://sumologic.com" target="_blank">sumologic</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="postman hide"><a href="#">postman</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="medlife hide"><a href="#">medlife</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="cmnty">
-                <div class="flex-it">
-                  <div class="fhf">
-                    <div class="head"><span>Community</span></div>
-                  </div>
-                  <div class="f1">
-                    <div class="wheelsbox"><a href="https://wheelsbox.com/" target="_blank">wheelsbox</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="wone"><a href="https://www.wonecreations.com/" target="_blank">wone</a></div>
-                  </div>
-                  <div class="f1">
-                    <div class="konfhub"><a href="https://konfhub.com/" target="_blank">konfhub</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-8" style="background-color: #eeeeee" id="speakers">
-        <div class="container">
-            <div class="speakers">
-              <h4 class="main-heading-ttl text-center" style="color: #000">Speakers</h4>
-              <div class="text-center" style="font-size: 8vw; color: #ddd">
-                Coming soon
-              </div>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 
-              <div class="spk_lst flex-it hide">
-                <div class="spk_itm_col">
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="spk_itm_col">
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="spk_itm_col">
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="spk_itm_col">
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div><div class="spk_itm flex-it">
-                    <div class="prod_im"><img src="images/prof.png" alt=""></div>
-                    <div class="namenid">
-                      <p>
-                        <b>Jiju Thomas Mathew</b>
-                        <br>
-                        <small>CTO, Innoval Digital Solutions</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="section-6" id="volunteers">
-        <div class="container">
-            <div class="volunteers">
-              <h4 class="main-heading-ttl text-center">Volunteers</h4>
-              <div class="text-center" style="font-size: 8vw; color: #ddd">
-                Coming soon
-              </div>
-              <div class="vl-row-list hide">
-                <div class="vl-i  flex-it hcenter">
-                  <div class="person" data-fname="Jeevan" data-lname="Dongre">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/jeevandongre">
-                    <i class="icon large ion-logo-twitter"></i>@jeevandongre</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Sathyajith" data-lname="Bhat">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/sathyabhat">
-                    <i class="icon large ion-logo-twitter"></i>@sathyabhat</a>
-                    </div>
-                  </div><div class="person" data-fname="Bhuvaneswari" data-lname="Subramani">
-                    <div class="img">
+		gtag('js', new Date());
 
-                      <a target="_blank" href="https://twitter.com/installjournal">
-                        <i class="icon large ion-logo-twitter"></i>@installjournal</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Prashanth" data-lname="HN">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/prashanth">
-                    <i class="icon large ion-logo-twitter"></i>@prashanth</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Runcy" data-lname="Oommen">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/runcyoommen">
-                        <i class="icon large ion-logo-twitter"></i>@runcyoommen</a>
-                    </div>
-                  </div>
-                  <div class="person push" data-fname="Hari" data-lname="Kiran">
-                    <div class="img">
-                        <a target="_blank" href="https://twitter.com/g_harikiran">
-                          <i class="icon large ion-logo-twitter"></i>@g_harikiran</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Ganesh" data-lname="Samarthyam">
-                    <div class="img">
-                        <a target="_blank" href="https://twitter.com/GSamarthyam">
-                          <i class="icon large ion-logo-twitter"></i>@GSamarthyam</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Krishna" data-lname="Muddi">
-                    <div class="img">
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Praveen" data-lname="Gorakala">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/onlyveen">
-                        <i class="icon large ion-logo-twitter"></i>@onlyveen</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Rahul" data-lname="Sawant">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/Raalzz">
-                       <i class="icon large ion-logo-twitter"></i>@Raalzz</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Akhil" data-lname="VC">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/akhilvc10">
-                        <i class="icon large ion-logo-twitter"></i>@akhilvc10</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Mayank" data-lname="Pahwa">
-                    <div class="img">
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Sahil" data-lname="Sharma">
-                    <div class="img">
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Piyush" data-lname="Jalan">
-                    <div class="img">
-                      <a target="_blank" href="https://twitter.com/piyushjalan93">
-                        <i class="icon large ion-logo-twitter"></i>@piyushjalan93</a>
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Harsha" data-lname="Ramakrishna">
-                    <div class="img">
-                    </div>
-                  </div>
-                  <div class="person" data-fname="Anand" data-lname="Mehta">
-                    <div class="img">
-                    </div>
-                  </div><div class="person" data-fname="Kaivalya" data-lname="Shah">
-                    <div class="img">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="section section-7" id="subscribe">
-        <div class="container">
-          <div class="sponsors">
-            <div class="foot-fk">
-              <h4 class="main-heading-ttl">SHOW YOUR INTEREST</h4>
-              <div class="row flex-it vcenter">
-                <div class="col-md-7 left-text">
-                  <p class="hide">
-                    For sponsorship enquires, topic proposals, ticketing,
-                    feedback or any general question on AWS Community Day
-                    Chennai 2019, please drop an email to <a>@awsugchn.in</a>
-                  </p>
-                  <p class="texting">
-                    Leave your email to get notified when we start selling
-                    tickets
-                  </p>
-                </div>
-                <div class="col-md-5">
-                  <div id="mc_embed_signup">
-                    <form
-                            action="https://awsugblr.us19.list-manage.com/subscribe/post?u=3def0c6d5f1fba7150ebb3266&amp;id=13fa22bb69"
-                            method="post"
-                            id="mc-embedded-subscribe-form"
-                            name="mc-embedded-subscribe-form"
-                            class="validate "
-                            target="_blank"
-                            novalidate
-                    >
-                      <div id="mc_embed_signup_scrol" class="input-group">
-                        <div class="mc-field-group input-group-item f2">
-                          <input
-                                  type="email"
-                                  placeholder="someone@example.com"
-                                  value=""
-                                  name="EMAIL"
-                                  class="required email"
-                                  id="mce-EMAIL"
-                          />
-                        </div>
-                        <div class="clear input-group-item">
-                          <button
-                                  type="submit"
-                                  name="subscribe"
-                                  id="mc-embedded-subscribe"
-                                  class="button"
-                          >
-                            Submit
-                          </button>
-                        </div>
-                      </div>
-                      <div id="mce-responses" class="clear">
-                        <div
-                                class="response"
-                                id="mce-error-response"
-                                style="display:none"
-                        ></div>
-                        <div
-                                class="response"
-                                id="mce-success-response"
-                                style="display:none"
-                        ></div>
-                      </div>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div
-                              style="position: absolute; left: -5000px;"
-                              aria-hidden="true"
-                      >
-                        <input
-                                type="text"
-                                name="b_3def0c6d5f1fba7150ebb3266_13fa22bb69"
-                                tabindex="-1"
-                                value=""
-                        />
-                      </div>
-                    </form>
-                  </div>
-                  <script
-                          type="text/javascript"
-                          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-                  ></script>
-                  <script type="text/javascript">
-                    (function($) {
-                      window.fnames = new Array();
-                      window.ftypes = new Array();
-                      fnames[0] = "EMAIL";
-                      ftypes[0] = "email";
-                      fnames[1] = "FNAME";
-                      ftypes[1] = "text";
-                      fnames[2] = "LNAME";
-                      ftypes[2] = "text";
-                      fnames[3] = "ADDRESS";
-                      ftypes[3] = "address";
-                      fnames[4] = "PHONE";
-                      ftypes[4] = "phone";
-                    })(jQuery);
-                    var $mcj = jQuery.noConflict(true);
-                  </script>
-                </div>
-              </div>
-              <p class="text-center hide">
-                <small
-                >Please do read the Code of Conduct for this event.</small
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="myModal"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            >
-              ×
-            </button>
-          </div>
-          <div class="modal-body">
-            <iframe
-              src=""
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-              mozallowfullscreen="mozallowfullscreen"
-              msallowfullscreen="msallowfullscreen"
-              oallowfullscreen="oallowfullscreen"
-              webkitallowfullscreen="webkitallowfullscreen"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      var latt = 13.0827;
-      var lngg = 80.2707;
-      var venue = "Chennai";
+		gtag('config', 'UA-123754553-1');
+	</script>
+</head>
+<body>
+<div id="page">
+	<div class="section section-1 hdr">
+		<div class="content" id="main-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+						<div class="left_in">
+							<img src="images/logo.png" style="max-width: 100%;padding-top: 100px;"/>
+							<div class="txt">
+								<h3 class="headin-ttl">
+									10<sup>th</sup> August 2019, Chennai
+								</h3>
+								<p style="text-align: justify">
+									AWS Users Group Chennai (AWSUGCHN) is all set to host the most awaited event, AWS
+									Community Day
+									Chennai 2019, unveiling success stories, use cases & much more from industry
+									leaders.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav-bar">
+			<p id="toggle"><span></span></p>
+			<li class="spec">
+				<a href="#">Registration Opening Soon</a>
+			</li>
+			<ul>
+				<li>
+					<a href="#com_info">About Community Day</a>
+				</li>
+				<li>
+					<a href="#cfp">CFP</a>
+				</li>
+				<li>
+					<a href="#venues">Venue</a>
+				</li>
+				<li>
+					<a href="#agenda">Agenda</a>
+				</li>
+				<li>
+					<a href="#sponsors">Sponsors</a>
+				</li>
+				<li>
+					<a href="#speakers">Speakers</a>
+				</li>
+				<li>
+					<a href="#volunteers">Volunteers</a>
+				</li>
+				<li>
+					<a href="#contactUs">Contact Us</a>
+				</li>
+				<li>
+					<a href="#subscribe" id="sub-button" class="sub-button">
+						<i class="icon large ion-md-notifications-outline"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section section-2">
+		<div class="container flex-it">
+			<div class="f1 left" id="com_info">
+				<div class="left_in" style="text-align: justify">
+					<h4 class="headin-ttl">
+						WHO WE ARE?
+					</h4>
+					<p>
+						<b><a href="https://www.meetup.com/awsusergroup-chennai" target="_blank">AWS User Group Chennai
+							(AWSUGCHN)</a></b> is a Chennai based group united by
+						community-led learnings and diversified by the wide variety of
+						tools and technologies closely knit with Amazon Web Services,
+						Cloud Computing Technology, AWS Design Implementation and
+						Servicing, High Scalability / Performance Computing, Production
+						use cases of AWS, Blockchain, Artificial Intelligence and much
+						more.
+					</p>
+					<p>
+						The AWS Community Day is supported by AWS but independent of them. It will provide the
+						community with a platform to have a 'collective voice': an opportunity to explore what we love
+						about AWS, but also what we'd like to see improved.
+					</p>
+					<p>
+						Community-based learning is the best way to enhance the concepts
+						being taught by connecting with enthusiasts in person, thereby
+						sharing first-hand experiences and familiar, accessible
+						examples.
+					</p>
+					<p>
+						All skills levels are welcome to help accomplish our motto of
+						learning, sharing and networking. Let us join hands to empower
+						this tech community to make it bigger and better!
+					</p>
+				</div>
+			</div>
+			<div class="f1 right" id="even_info">
+				<div class="right_in">
+					<h4 class="heading-ttl">
+						What to expect from AWS Community Day?
+					</h4>
+					<ul class="circle">
+						<li>
+							Renew, Revive & Revitalize to exemplify your excitement about the work you do.
+						</li>
+						<li>
+							Learn industry trends and intricacies about innovative implementations from AWS experts.
+						</li>
+						<li>
+							Harness the power of networking with 400+ AWS Users, DevOps, Developers & Solutions
+							Architects.
+						</li>
+						<li>
+							Network with fellow AWS veterans & techies during breaks.
+						</li>
+						<li>
+							Novice to Pioneer on relentless pursuit to learn can rejoice the AWS offerings & success
+							stories under
+							one roof.
+						</li>
+						<li>
+							Take helpful and valuable information back to business.
+						</li>
+						<li>
+							Gain visibility to get more publicity for your esteemed organisation.
+						</li>
+						<li>
+							Gain a deeper understanding of AWS core and application services
+						</li>
+						<li>
+							Learn how to deploy and automate your infrastructure on the AWS Cloud.
+						</li>
+						<li>
+							Sporting chance for active participants to win AWS goodies.
+						</li>
+					</ul>
+				</div>
+				<br/>
+				<b>Please read the
+					<a href="./code_of_conduct.html" target="_blank">Code of Conduct</a>
+					for this event</b>
+			</div>
+		</div>
+	</div>
+	<div class="section section-3 text-center" id="cfp">
+		<div class="container">
+			<div class="cfp">
+				<h4 class="main-heading-ttl">Submit a talk</h4>
+				<div>
+					<p style="text-align: justify">
+						The Call for Papers (CFP) is open to everyone. It gives you the opportunity to speak to your
+						peers from the stage, should you have something of value to share to a larger audience.
+						Speaking at an event like AWS Community Day is a unique opportunity to build your brand
+						and expand your speaker profile. If you would like your presentation to be considered for
+						one of the tracks, please follow this link to fill out a form.
+					</p>
+					<p>
+					<h4>Last date for submission - Friday, May 17, 2019.</h4>
+					</p>
+				</div>
+				<div style="text-align: left">
+					<h3 class="heading-ttl">
+						Talk theme ideas:
+					</h3>
+					<ul class="circle">
+						<li>
+							Machine Learning
+						</li>
+						<li>
+							Artificial Intelligence
+						</li>
+						<li>
+							Serverless
+						</li>
+						<li>
+							Internet of Things (IoT)
+						</li>
+						<li>
+							DevOps
+						</li>
+						<li>
+							Containers
+						</li>
+						<li>
+							Big Data
+						</li>
+						<li>
+							Alexa
+						</li>
+						<li>
+							Security
+						</li>
+						<li>
+							Networking
+						</li>
+					</ul>
+				</div>
+				<div style="padding-top: 15px">
+					<a class="typeform-share button" href="https://awsugcgn.typeform.com/to/kRG8ez" data-mode="popup"
+					   style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+					   data-submit-close-delay="5" target="_blank">Propose a session </a>
+					<script> (function () {
+						var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement,
+							gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/";
+						if (!gi.call(d, id)) {
+							js = ce.call(d, "script");
+							js.id = id;
+							js.src = b + "embed.js";
+							q = gt.call(d, "script")[0];
+							q.parentNode.insertBefore(js, q)
+						}
+					})() </script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-3" id="venues">
+		<div class="container flex-it">
+			<div class="left f1 flex-it">
+				<h4 class="headin-ttl">
+					Venue
+				</h4>
+				<div class="left_in f1">
+					<div id="map"></div>
+				</div>
+			</div>
+			<div class="right f1">
+				<div class="right_in">
+					<div
+							class="ven-1 ven active"
+							data-lat="13.0166902"
+							data-lng="80.2049061"
+							data-label="Hilton Chennai"
+					>
+						<div>
+							<span style="font-size: 1.2vw;">10<sup>th</sup> August 2019</span>
+							<h4 class="headin-ttl">Conference</h4>
+							<ul>
+								<li><b>Hilton Chennai,</b></li>
+								<li>124, 1, Jawaharlal Nehru Salai,</li>
+								<li>Poomagal Nagar,</li>
+								<li>Guindy, Chennai,</li>
+								<li>Tamil Nadu 600032</li>
+							</ul>
+						</div>
+					</div>
+					<div class="marked"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-4" id="agenda">
+		<div class="container">
+			<div class="sponsors">
+				<h4 class="main-heading-ttl text-center">Agenda</h4>
+				<div>
+					<p>
+						The event is a full day event covering several interesting topics presented with real-world
+						cases,
+						tracks and workshops. Topics also cover wide variety of interests and technical levels, so
+						everyone
+						should have interesting day from the scheduled offering.
+					</p>
+					<p>
+						We are finalizing the final agenda, but the event starts with registration at 08:00 and Keynote
+						starts at 09:00. Day concludes at 18:00.
+					</p>
+				</div>
+				<div class="text-center" style="font-size: 8vw; color: #ddd">
+					Coming soon
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-5" id="sponsors">
+		<div class="container">
+			<div class="sponsors">
+				<h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
+				<div class="text-center tmp" style="font-size: 1.5vw; color: #999">
+					<a target="_blank" href="./docs/ACD-chennai-sponsorship-deck.pdf" disabled
+					>View our sponsorship deck</a
+					>
+					or email us at
+					<i><b style="font-size: 2vw; color: #000"><a href="mailto:info@awsugchn.in">info@awsugchn.in</a></b></i>
+				</div>
+				<div class="cats">
+					<div class="pltnm">
+						<div class="flex-it">
+							<div class="fhf">
+								<div class="head"><span>Platinum</span></div>
+							</div>
+							<div class="f1 push">
+								<div class="agilisium">
+									<a href="https://www.agilisium.com/" target="_blank">Agilisium</a>
+								</div>
+								<!--<div>
+									Agilisium Consulting is a Los Angeles based Big Data and Analytics Company with
+									clear focus on helping organizations accelerate their “Data-to-Insights-Leap”. To
+									this end, Agilisium has invested in all stages of data journey: Data Architecture
+									Consulting, Data Integration, Data Storage, Data Governance and Data Analytics. With
+									advanced Design Thinking capabilities, a thriving Partner Eco-system and top-notch
+									industry certifications, Agilisium is inherently vested in our clients’ success.
+								</div>-->
+							</div>
+							<div class="f1">
+								<div class="elastic hide"><a href="https://elastic.co" target="_blank">Elastic</a></div>
+							</div>
+							<div class="f1">
+								<div class="intel hide"><a href="#">intel</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="gld">
+						<div class="flex-it">
+							<div class="fhf">
+								<div class="head"><span>Gold</span></div>
+							</div>
+							<div class="f1">
+								<p class="text-center">Will be added shortly</p>
+								<div class="moengage hide"><a href="#">moengage</a></div>
+							</div>
+							<div class="f1">
+								<div class="swiggy hide"><a href="#">swiggy</a></div>
+							</div>
+							<div class="f1">
+								<div class="elastic hide"><a href="#">elastic</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="slvr">
+						<div class="flex-it">
+							<div class="fhf">
+								<div class="head"><span>Silver</span></div>
+							</div>
+							<div class="f1">
+								<p class="text-center">Will be added shortly</p>
+								<div class="sumologic hide"><a href="https://sumologic.com"
+								                               target="_blank">sumologic</a></div>
+							</div>
+							<div class="f1">
+								<div class="postman hide"><a href="#">postman</a></div>
+							</div>
+							<div class="f1">
+								<div class="medlife hide"><a href="#">medlife</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="cmnty">
+						<div class="flex-it">
+							<div class="fhf">
+								<div class="head"><span>Community</span></div>
+							</div>
+							<div class="f1">
+								<div class="konfhub"><a href="https://konfhub.com/" target="_blank">konfhub</a></div>
+							</div>
+							<div class="f1">
+								<div class="clockwork">
+									<a href="http://www.clockworkpod.com/" target="_blank">Clockwork</a>
+								</div>
+							</div>
+							<div class="f1">
+								<div class="wone hide"><a href="https://www.wonecreations.com/" target="_blank">wone</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-8" style="background-color: #eeeeee" id="speakers">
+		<div class="container">
+			<div class="speakers">
+				<h4 class="main-heading-ttl text-center" style="color: #000">Speakers</h4>
+				<div class="text-center" style="font-size: 8vw; color: #ddd">
+					Coming soon
+				</div>
 
-      function setCoords(latt, lngg, venue) {
-        this.latt = latt;
-        this.lngg = lngg;
-        this.venue = venue;
-        console.log("clicked");
-        initMap();
-        $(this).addClass("hello");
-      }
-      function initMap() {
-        var uluru = { lat: latt, lng: lngg };
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: uluru,
-          scrollwheel: false
-        });
-        var markerIcon = {
-          url: "https://image.flaticon.com/icons/svg/252/252025.svg",
-          scaledSize: new google.maps.Size(50, 50),
-          origin: new google.maps.Point(0, 0),
-          anchor: new google.maps.Point(32, 65),
-          labelOrigin: new google.maps.Point(25, 70)
-        };
-        var markerLabel = venue;
-        var marker = new google.maps.Marker({
-          map: map,
-          animation: google.maps.Animation.DROP,
-          position: uluru,
-          icon: markerIcon,
-          disableDefaultUI: true,
-          label: {
-            text: markerLabel,
-            color: "#eb3a44",
-            fontSize: "16px",
-            fontWeight: "bold"
-          }
-        });
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSK4vqrOG3caqUr6dxAVhA7MrdMmq63q0&callback=initMap"
-    ></script>
-  </body>
+				<div class="spk_lst flex-it hide">
+					<div class="spk_itm_col">
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="spk_itm_col">
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="spk_itm_col">
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="spk_itm_col">
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+						<div class="spk_itm flex-it">
+							<div class="prod_im"><img src="images/prof.png" alt=""></div>
+							<div class="namenid">
+								<p>
+									<b>Jiju Thomas Mathew</b>
+									<br>
+									<small>CTO, Innoval Digital Solutions</small>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-6" id="volunteers">
+		<div class="container">
+			<div class="volunteers">
+				<h4 class="main-heading-ttl text-center">Volunteers</h4>
+				<div class="vl-row-list">
+					<div class="vl-i flex-it hcenter">
+						<div class="person" data-fname="Parthasarathi" data-lname="Balasubramanian">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/parthabalasubramanian">
+									<i class="icon large ion-logo-linkedin"></i>@parthabalasubramanian</a>
+							</div>
+						</div>
+						<div class="person" data-fname="Swaminathan" data-lname="B S">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/swaminathan-b-s-13b69496/">
+									<i class="icon large ion-logo-linkedin"></i>@swaminathan</a>
+							</div>
+						</div>
+						<div class="person" data-fname="Ilanchezhian" data-lname="Ganesamurthy">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/ilanchezhian">
+									<i class="icon large ion-logo-linkedin"></i>@ilanchezhian</a>
+							</div>
+						</div>
+						<div class="person" data-fname="Ragunathan" data-lname="Maniraj">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/mragu">
+									<i class="icon large ion-logo-linkedin"></i>@mragu</a>
+							</div>
+						</div>
+						<div class="person push" data-fname="Hemamalini" data-lname="Nithyanandam">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/hemamalini-nithyanandam">
+									<i class="icon large ion-logo-linkedin"></i>@hemamalini</a>
+							</div>
+						</div>
+						<div class="person" data-fname="Praveen" data-lname="SV">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/praveen-sv-0a3b2b100">
+									<i class="icon large ion-logo-linkedin"></i>@praveen</a>
+							</div>
+						</div>
+						<div class="person" data-fname="Mageshwaran" data-lname="M">
+							<div class="img">
+								<a target="_blank" href="https://www.linkedin.com/in/mageshwaran-m/">
+									<i class="icon large ion-logo-linkedin"></i>@mageshwaran</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vl-row-list hide">
+				<div class="vl-i  flex-it hcenter">
+					<div class="person" data-fname="Jeevan" data-lname="Dongre">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/jeevandongre">
+								<i class="icon large ion-logo-twitter"></i>@jeevandongre</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Sathyajith" data-lname="Bhat">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/sathyabhat">
+								<i class="icon large ion-logo-twitter"></i>@sathyabhat</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Bhuvaneswari" data-lname="Subramani">
+						<div class="img">
+
+							<a target="_blank" href="https://twitter.com/installjournal">
+								<i class="icon large ion-logo-twitter"></i>@installjournal</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Prashanth" data-lname="HN">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/prashanth">
+								<i class="icon large ion-logo-twitter"></i>@prashanth</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Runcy" data-lname="Oommen">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/runcyoommen">
+								<i class="icon large ion-logo-twitter"></i>@runcyoommen</a>
+						</div>
+					</div>
+					<div class="person push" data-fname="Hari" data-lname="Kiran">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/g_harikiran">
+								<i class="icon large ion-logo-twitter"></i>@g_harikiran</a>
+						</div>
+					</div>
+
+					<div class="person" data-fname="Krishna" data-lname="Muddi">
+						<div class="img">
+						</div>
+					</div>
+					<div class="person" data-fname="Praveen" data-lname="Gorakala">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/onlyveen">
+								<i class="icon large ion-logo-twitter"></i>@onlyveen</a>
+						</div>
+					</div>
+
+					<div class="person" data-fname="Akhil" data-lname="VC">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/akhilvc10">
+								<i class="icon large ion-logo-twitter"></i>@akhilvc10</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Mayank" data-lname="Pahwa">
+						<div class="img">
+						</div>
+					</div>
+					<div class="person" data-fname="Sahil" data-lname="Sharma">
+						<div class="img">
+						</div>
+					</div>
+					<div class="person" data-fname="Piyush" data-lname="Jalan">
+						<div class="img">
+							<a target="_blank" href="https://twitter.com/piyushjalan93">
+								<i class="icon large ion-logo-twitter"></i>@piyushjalan93</a>
+						</div>
+					</div>
+					<div class="person" data-fname="Harsha" data-lname="Ramakrishna">
+						<div class="img">
+						</div>
+					</div>
+					<div class="person" data-fname="Anand" data-lname="Mehta">
+						<div class="img">
+						</div>
+					</div>
+					<div class="person" data-fname="Kaivalya" data-lname="Shah">
+						<div class="img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-4" id="contactUs">
+		<h4 class="main-heading-ttl text-center">Get In Touch</h4>
+		<div class="container flex-it">
+			<div class="f1 left">
+				<div class="left_in" style="text-align: justify">
+					<h4 class="headin-ttl">
+						Contact Us
+					</h4>
+					<p>
+						We are always happy to hear from you. You can reach us for sponsorship enquires, topic
+						proposals,
+						ticketing, feedback or any general question on AWS Community Day Chennai 2019, please
+						drop an email to <a href="mailto:info@awsugchn.in">info@awsugchn.in</a>
+					</p>
+				</div>
+			</div>
+			<div class="f1 right">
+				<div class="right_in">
+					<h4 class="headin-ttl">
+						Follow Us
+					</h4>
+					<p>
+						<a href="https://www.meetup.com/awsusergroup-chennai" id="meetup">
+							<i class="fab fa-meetup fa-3x" style="color: red; padding: 10px 10px 10px 0px"></i></a>
+						<a href="https://www.linkedin.com/in/awsugchn" id="linkedIn">
+							<i class="fab fa-linkedin-square fa-3x" style="padding: 10px;"></i></a>
+						<a href="https://www.facebook.com/awsugchn" id="facebook">
+							<i class="fab fa-facebook-square fa-3x" style="padding: 10px;"></i></a>
+						<a href="https://twitter.com/awsugchn" id="twitter">
+							<i class="fab fa-twitter-square fa-3x" style="padding: 10px;"></i></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section-7" id="subscribe" style="margin: 0px auto 100px;">
+		<div class="container">
+			<div class="sponsors">
+				<div class="foot-fk">
+					<h4 class="main-heading-ttl">SHOW YOUR INTEREST</h4>
+					<div class="row flex-it vcenter">
+						<div class="col-md-7 left-text">
+							<p class="hide">
+								For sponsorship enquires, topic proposals, ticketing,
+								feedback or any general question on AWS Community Day
+								Chennai 2019, please drop an email to <a>@awsugchn.in</a>
+							</p>
+							<p class="texting">
+								Leave your email to get notified when we start selling
+								tickets
+							</p>
+						</div>
+						<div class="col-md-5">
+							<div id="mc_embed_signup">
+								<form
+										action="https://gmail.us20.list-manage.com/subscribe/post?u=e5d03813598851e02625c7053&amp;id=d9eceee9a1"
+										method="post"
+										id="mc-embedded-subscribe-form"
+										name="mc-embedded-subscribe-form"
+										class="validate "
+										target="_blank"
+										novalidate
+								>
+									<div id="mc_embed_signup_scrol" class="input-group">
+										<div class="mc-field-group input-group-item f2">
+											<input
+													type="email"
+													placeholder="someone@example.com"
+													value=""
+													name="EMAIL"
+													class="required email"
+													id="mce-EMAIL"
+											/>
+										</div>
+										<div class="clear input-group-item">
+											<button
+													type="submit"
+													name="subscribe"
+													id="mc-embedded-subscribe"
+													class="button"
+											>
+												Submit
+											</button>
+										</div>
+									</div>
+									<div id="mce-responses" class="clear">
+										<div
+												class="response"
+												id="mce-error-response"
+												style="display:none"
+										></div>
+										<div
+												class="response"
+												id="mce-success-response"
+												style="display:none"
+										></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div
+											style="position: absolute; left: -5000px;"
+											aria-hidden="true"
+									>
+										<input
+												type="text"
+												name="b_3def0c6d5f1fba7150ebb3266_13fa22bb69"
+												tabindex="-1"
+												value=""
+										/>
+									</div>
+								</form>
+							</div>
+							<script
+									type="text/javascript"
+									src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+							></script>
+							<script type="text/javascript">
+								(function ($) {
+									window.fnames = new Array();
+									window.ftypes = new Array();
+									fnames[0] = "EMAIL";
+									ftypes[0] = "email";
+									fnames[1] = "FNAME";
+									ftypes[1] = "text";
+									fnames[2] = "LNAME";
+									ftypes[2] = "text";
+									fnames[3] = "ADDRESS";
+									ftypes[3] = "address";
+									fnames[4] = "PHONE";
+									ftypes[4] = "phone";
+								})(jQuery);
+								var $mcj = jQuery.noConflict(true);
+							</script>
+						</div>
+					</div>
+					<p class="text-center hide">
+						<small
+						>Please do read the Code of Conduct for this event.
+						</small
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div
+		id="myModal"
+		class="modal fade"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="myModalLabel"
+		aria-hidden="true"
+>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-hidden="true"
+				>
+					×
+				</button>
+			</div>
+			<div class="modal-body">
+				<iframe
+						src=""
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen="allowfullscreen"
+						mozallowfullscreen="mozallowfullscreen"
+						msallowfullscreen="msallowfullscreen"
+						oallowfullscreen="oallowfullscreen"
+						webkitallowfullscreen="webkitallowfullscreen"
+				></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var latt = 13.0166902;
+	var lngg = 80.2049061;
+	var venue = "Hilton Chennai";
+
+	function setCoords(latt, lngg, venue) {
+		this.latt = latt;
+		this.lngg = lngg;
+		this.venue = venue;
+		console.log("clicked");
+		initMap();
+		$(this).addClass("hello");
+	}
+
+	function initMap() {
+		var uluru = {lat: latt, lng: lngg};
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 15,
+			center: uluru,
+			scrollwheel: false
+		});
+		var markerIcon = {
+			url: "https://image.flaticon.com/icons/svg/252/252025.svg",
+			scaledSize: new google.maps.Size(50, 50),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(32, 65),
+			labelOrigin: new google.maps.Point(25, 70)
+		};
+		//var markerLabel = venue;
+		var marker = new google.maps.Marker({
+			map: map,
+			animation: google.maps.Animation.DROP,
+			position: uluru,
+			icon: markerIcon,
+			disableDefaultUI: true,
+			label: {
+				text: venue,
+				color: "#eb3a44",
+				fontSize: "16px",
+				fontWeight: "bold"
+			}
+		});
+	}
+</script>
+<script
+		async
+		defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKei7EnlSDmE4NKMG5RD6kmyMR4t08a1A&callback=initMap"
+></script>
+<script type='text/javascript'
+        src='//platform-api.sharethis.com/js/sharethis.js#property=5c8fef3479cde600116dba08&product=sticky-share-buttons'
+        async='async'>
+</script>
+</body>
 </html>
