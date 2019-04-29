@@ -1,0 +1,8 @@
+.notes
+.idea
+.vscode
+/node_modules
+*.zip
+npm-debug.log
+.DS_store
+/test/tmp
