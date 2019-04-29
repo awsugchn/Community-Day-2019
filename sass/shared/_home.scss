@@ -678,6 +678,12 @@
                 &.wone {
                   background-image: url(../images/spons/wone.png);
                 }
+                &.wwc {
+                  background-image: url(../images/spons/wwc.png);
+                }
+                &.jetbrains {
+                  background-image: url(../images/spons/jetbrains.png);
+                }
                 &.cloud {
                   background-image: url(../images/spons/cloud.png);
                 }
@@ -867,50 +873,20 @@
           &[data-fname="Swaminathan"] .img {
             background-image: url(../images/vols/swami.png);
           }
-          &[data-fname="Runcy"] .img {
-            background-image: url(../images/vols/runcy.jpg);
-          }
           &[data-fname="Ragunathan"] .img {
             background-image: url(../images/vols/prashanth.png);
-          }
-          &[data-fname="Krishna"] .img {
-            background-image: url(../images/vols/krishna.jpg);
-          }
-          &[data-fname="Anand"] .img {
-            background-image: url(../images/vols/anand.jpg);
-          }
-          &[data-fname="Rahul"] .img {
-            background-image: url(../images/vols/rahul.jpg);
-          }
-          &[data-fname="Mayank"] .img {
-            background-image: url(../images/vols/mayank.jpg);
-          }
-          &[data-fname="Sahil"] .img {
-            background-image: url(../images/vols/sahil.jpg);
-          }
-          &[data-fname="Harsha"] .img {
-            background-image: url(../images/vols/harsha.jpg);
-          }
-          &[data-fname="Akhil"] .img {
-            background-image: url(../images/vols/akhil.jpg);
           }
           &[data-fname="Ilanchezhian"] .img {
             background-image: url(../images/vols/ilan.jpg);
           }
-          &[data-fname="Praveen"] .img {
-            background-image: url(../images/vols/veen.jpg);
-          }
-          &[data-fname="Piyush"] .img {
-            background-image: url(../images/vols/piyush.jpg);
-          }
-          &[data-fname="Hari"] .img {
-            background-image: url(../images/vols/hari.jpg);
-          }
-          &[data-fname="Ganesh"] .img {
-            background-image: url(../images/vols/ganesh.jpg);
-          }
           &[data-fname="Hemamalini"] .img {
             background-image: url(../images/vols/hemamalini.jpg);
+          }
+          &[data-fname="Mageshwaran"] .img {
+            background-image: url(../images/vols/magesh.jpg);
+          }
+          &[data-fname="Praveen"] .img {
+            background-image: url(../images/vols/praveen.jpg);
           }
         }
       }
