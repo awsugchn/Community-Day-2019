@@ -2079,6 +2079,13 @@ i.icon.large {
   border: solid 1px #dddddd;
 }
 
+/** TO FIX Silver sponsors */
+#page .section-5 .sponsors .cats .flex-it .slvr-content .f1 {
+  flex-grow: unset;
+  flex-basis: unset;
+  width: 100%;
+  padding: 0 8px;
+}
 #page .section-5 .sponsors .cats .flex-it .f1 {
   flex-grow: unset;
   flex-basis: unset;
