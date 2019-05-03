@@ -2119,6 +2119,18 @@ i.icon.large {
   background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
 
+.slvr-text {
+  color: #555 !important;
+  font-size: 14px !important;
+  border: none !important;
+  text-align: justify !important;
+  height: 200px !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
 /*
  * ==== hexagon
  */
