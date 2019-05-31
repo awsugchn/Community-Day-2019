@@ -1793,6 +1793,26 @@ div#myModal .modal-body {
 #page .section-6 .volunteers .vl-i .person[data-fname="Ilanchezhian"] .img {
   background-image: url(../images/vols/ilan.jpg);
 }
+/* line 885, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Hari"] .img {
+  background-image: url(../images/vols/hari.jpg);
+}
+/* line 888, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Ganesh"] .img {
+  background-image: url(../images/vols/ganesh.jpg);
+}
+/* line 891, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Muthukumar"] .img {
+  background-image: url(../images/vols/muthukumar.jpg);
+}
+/* line 894, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Ramya"] .img {
+  background-image: url(../images/vols/ramya.jpg);
+}
+/* line 897, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Sridevi"] .img {
+  background-image: url(../images/vols/sridevi.jpg);
+}
 /* line 912, ../sass/shared/_home.scss */
 #page .section-6 .volunteers .vl-i .person[data-fname="Hemamalini"] .img {
   background-image: url(../images/vols/hemamalini.jpg);
@@ -2058,7 +2078,7 @@ i.icon.large {
   border-color: #be952c #a68226 #9b7924;
   background: #eeba37;
   color: #333 !important;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPâ€¦dpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fee6b0),color-stop(100%, #eeba37));
   background-image: -moz-linear-gradient(#fee6b0 0%,#eeba37 100%);
