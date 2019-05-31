@@ -1572,6 +1572,10 @@ div#myModal .modal-body {
 #page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).chargebee, #chargebee {
   background-image: url(../images/spons/chargebee.png);
 }
+/* line 696, ../sass/shared/_home.scss */
+#page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).8kmiles, #8kmiles {
+  background-image: url(../images/spons/8kmiles.png);
+}
 /* line 694, ../sass/shared/_home.scss */
 #page .section-8 {
   padding: 100px 0;
