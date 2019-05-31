@@ -1568,6 +1568,10 @@ div#myModal .modal-body {
 #page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).konfhub {
   background-image: url(../images/spons/konfhub.png);
 }
+/* line 693, ../sass/shared/_home.scss */
+#page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).chargebee, #chargebee {
+  background-image: url(../images/spons/chargebee.png);
+}
 /* line 694, ../sass/shared/_home.scss */
 #page .section-8 {
   padding: 100px 0;
