@@ -1261,7 +1261,7 @@ div#myModal .modal-body {
 /* line 448, ../sass/shared/_home.scss */
 #page .section-3 .right .right_in > div {
   cursor: pointer;
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: 100%;
   display: flex;
@@ -1310,7 +1310,7 @@ div#myModal .modal-body {
   /* line 483, ../sass/shared/_home.scss */
   #page .section-3 .right .right_in > div {
     padding: 0 15px;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 }
@@ -2315,8 +2315,31 @@ i.icon.large {
   color: rgba(242, 138, 3, 0.95);
 }
 
-
 .banner-content .classic-style .banner-title{
   font-size: 68px;
   text-transform: uppercase;
 }
+
+.table-header {
+  background: #232f3f !important;
+  color: #ff9900;
+}
+.td-time {
+  width: 25%;
+  text-align: center;
+}
+.td-track {
+  width: 25%;
+  font-weight: bold;
+  text-align: center;
+}
+.td-full-track {
+  width: 75%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: normal !important;
+}
+
