@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+	</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="google-site-verification" content="Rk5wzEFDvIE7-_Y9fmz0NTWoLwZwNwSeSPKcTsdFNqM"/>
 	<title>AWS Community Day 2019</title>
@@ -17,6 +23,12 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="images/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<meta property="og:url" content="https://communityday.awsugchn.in/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="AWS Community Day Chennai 2019">
+	<meta property="og:description" content="AWS Community Day Chennai 2019 is being organized by AWS User Group Chennai (AWSUGCHN). We're united by community-led learnings and diversified by the wide variety of tools and technologies closely knit with Amazon Web Services.">
+	<meta property="og:image" content="https://communityday.awsugchn.in/images/logo.png">
+	<meta property="og:image:secure_url" content="https://communityday.awsugchn.in/images/logo.png">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
 	        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			crossorigin="anonymous">
@@ -108,9 +120,9 @@
 				<li>
 					<a href="#com_info">About Community Day</a>
 				</li>
-				<li>
+				<!--<li>
 					<a href="#cfp">CFP</a>
-				</li>
+				</li>-->
 				<li>
 					<a href="#venues">Venue</a>
 				</li>
@@ -145,7 +157,7 @@
 					<a class="button book-ticket" href="https://konfhub.com/awsdayschn" data-mode="popup"
 					   data-submit-close-delay="5" target="_blank">Buy Tickets @ Early Bird Price</a>
 				</div>
-				<div style="padding-top: 10px">
+				<div class="hide" style="padding-top: 10px">
 					If you are a member of <a href="https://www.meetup.com/awsusergroup-chennai" target="_blank">AWS User Group Chennai
 					(AWSUGCHN)</a></b> please fill this <a href="https://forms.gle/Lo81RbJSz3TyTgAn8" target="_blank">form</a>,
 					to get excited discount.
@@ -236,7 +248,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section section-4 text-center" id="cfp"  style="background-color: #eeeeee">
+	<div class="section section-4 text-center hide" id="cfp"  style="background-color: #eeeeee">
 		<div class="container">
 			<div class="cfp">
 				<h4 class="main-heading-ttl">Submit a talk</h4>
@@ -345,21 +357,105 @@
 		<div class="container">
 			<div class="sponsors">
 				<h4 class="main-heading-ttl text-center">Agenda</h4>
-				<div>
-					<p>
-						The event is a full day event covering several interesting topics presented with real-world
-						cases,
-						tracks and workshops. Topics also cover wide variety of interests and technical levels, so
-						everyone
-						should have interesting day from the scheduled offering.
-					</p>
-					<p>
-						We are finalizing the final agenda, but the event starts with registration at 08:00 and Keynote
-						starts at 09:00. Day concludes at 18:00.
-					</p>
-				</div>
-				<div class="text-center" style="font-size: 8vw; color: #ddd">
-					Coming soon
+				<div class="table-responsive">
+					<table class="table table-striped table-dark table-bordered">
+						<thead class="thead-dark">
+						<tr>
+							<th class="td-time table-header">Time</th>
+							<th colspan="3" class="td-full-track table-header">Session Details</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td style="border: none"></td>
+							<td colspan="3" class="td-full-track">Morning Sessions</td>
+						</tr>
+						<tr>
+							<td class="td-time">08:00 AM - 09:00 AM</td>
+							<td colspan="3" class="td-full-track font-normal">Registration and Networking</td>
+						</tr>
+						<tr>
+							<td class="td-time">09:00 AM - 10:00 AM</td>
+							<td colspan="3" class="td-full-track font-normal">Keynote by AWS</td>
+						</tr>
+						<tr>
+							<td class="td-time">10:00 AM - 10:30 AM</td>
+							<td colspan="3" class="td-full-track font-normal">Presentation by Agilisium</td>
+						</tr>
+						<tr>
+							<td class="td-time">10:30 AM - 11:00 AM</td>
+							<td colspan="3" class="td-full-track font-normal">Platinum Sponsor Talk</td>
+						</tr>
+						<tr>
+							<td class="td-time">11:00 AM - 11:30 AM</td>
+							<td colspan="3" class="td-full-track">Tea Break and Networking</td>
+						</tr>
+						<tr>
+							<td class="td-track">Tracks</td>
+							<td class="td-track">Track 1</td>
+							<td class="td-track">Track 2</td>
+							<td class="td-track">Track 3</td>
+						</tr>
+						<tr>
+							<td class="td-time">11:30 AM - 12:00 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">12:10 PM - 12:40 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">12:40 PM - 13:50 PM</td>
+							<td colspan="3" class="td-full-track">Lunch and Networking</td>
+						</tr>
+						<tr>
+							<td style="border: none"></td>
+							<td colspan="3" class="td-full-track">Post Lunch Sessions</td>
+						</tr>
+						<tr>
+							<td class="td-track">Tracks</td>
+							<td class="td-track">Track 1</td>
+							<td class="td-track">Track 2</td>
+							<td class="td-track">Track 3</td>
+						</tr>
+						<tr>
+							<td class="td-time">13:50 PM - 14:30 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">14:40 PM - 15:20 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">15:30 PM - 16:10 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">16:10 PM - 16:40 PM</td>
+							<td colspan="3" class="td-full-track">Tea Break and Networking</td>
+						</tr>
+						<tr>
+							<td class="td-time">16:40 PM - 17:10 PM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="td-time">17:10 PM - 17:30 PM</td>
+							<td colspan="3" class="td-full-track">Lucky Draw & Closing Note</td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -409,11 +505,17 @@
 							<div style="padding-left: 25px">
 								<h3>Chargebee</h3>
 								<div class="flex-it text-justify">
-									Chargebee is the subscription management platform that powers one in every ten successful global SaaS businesses to acquire, retain, and scale revenue. Chargebee goes beyond automating recurring billing workflows, by eliminating complexities in the entire subscription lifecycle, revenue recognition, growth analytics, taxes and more, for thousands of businesses across 50+ countries. Chargebee is backed by Accel Partners, Tiger Global, and Insight Venture Partners and has offices in Asia, APAC, North America and Europe.
+									Chargebee is the subscription management platform that powers one in every ten
+									successful global SaaS businesses to acquire, retain, and scale revenue. Chargebee
+									goes beyond automating recurring billing workflows, by eliminating complexities in
+									the entire subscription lifecycle, revenue recognition, growth analytics, taxes and
+									more, for thousands of businesses across 50+ countries. Chargebee is backed by Accel
+									Partners, Tiger Global, and Insight Venture Partners and has offices in Asia, APAC,
+									North America and Europe.
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="flex-it">
 							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
@@ -423,7 +525,12 @@
 							<div style="padding-left: 25px">
 								<h3>8KMiles</h3>
 								<div class="flex-it text-justify">
-									8KMiles, a Born in cloud company, is a preferred AWS Premier Consulting partner and a Azure gold partner is focused on helping org in their cloud transformation. Our automation framework helps organizations seamlessly  integrate Identity Management, Big Data and Statutory compliance into their Cloud. As a global cloud service provider, our team of Amazon and Azure certified experts aid customers to manage their cloud transformation smoothly across the globe.
+									8KMiles, a Born in cloud company, is a preferred AWS Premier Consulting partner and
+									a Azure gold partner is focused on helping org in their cloud transformation. Our
+									automation framework helps organizations seamlessly integrate Identity Management,
+									Big Data and Statutory compliance into their Cloud. As a global cloud service
+									provider, our team of Amazon and Azure certified experts aid customers to manage
+									their cloud transformation smoothly across the globe.
 								</div>
 							</div>
 						</div>
@@ -432,11 +539,9 @@
 					<div class="flex-it"><h3>Silver</h3></div>
 					<div class="slvr">
 						<div class="flex-it">
-							<div class="flex-it" style="width: 78%;">
+							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
-									<div class="sumologic">
-										<a href="https://sumologic.com" target="_blank">sumologic</a>
-									</div>
+									<div class="sumologic"><a href="https://sumologic.com" target="_blank">sumologic</a></div>
 								</div>
 							</div>
 							<div style="padding-left: 25px">
@@ -451,24 +556,6 @@
 								</div>
 							</div>
 						</div>
-						<!--<div class="flex-it hide" style='align-items: normal;'>
-							<div class="slvr-content" style='width: 90%; text-align: justify;'>
-								<div class="f1">
-									<div class="sumologic flex-it">
-										<a href="https://sumologic.com" target="_blank">sumologic</a>
-									</div>
-								</div>
-							</div>
-							<div class="flex-it" style="color: #000000; font-size: 15px; border: none; margin: 10px;">
-								Sumo Logic is the leading cloud-native,
-								machine data analytics platform that delivers continuous intelligence across the
-								entire application lifecycle and stack. More than
-								1,600 customers around the globe rely on Sumo Logic for the analytics and insights
-								to build, run and secure their modern applications and cloud infrastructures. Logic for
-								the analytics and insights
-								to build, run and secure their modern applications and cloud infrastructures.
-							</div>
-						</div>-->
 					</div>
 					<hr class="split">
 					<div class="flex-it"><h3>Community</h3></div>
