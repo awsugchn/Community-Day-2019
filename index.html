@@ -20,6 +20,9 @@
 	      integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
 	      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="images/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
@@ -114,7 +117,7 @@
 		<div id="nav-bar">
 			<p id="toggle"><span></span></p>
 			<li class="spec">
-				<a href="#tickets">Buy Tickets @ Early Bird Price</a>
+				<a href="https://konfhub.com/awsdayschn" target="_blank">Buy Tickets @ Early Bird Price</a>
 			</li>
 			<ul>
 				<li>
@@ -149,7 +152,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="section section-4 text-center" id="tickets"  style="background-color: #eeeeee">
+	<!-- Back to top button -->
+	<a id="button"></a>
+	<div class="section section-4 text-center hide" id="tickets"  style="background-color: #eeeeee">
 		<div class="container">
 			<div class="cfp">
 				<h4 class="main-heading-ttl">Buy Tickets</h4>
@@ -465,9 +470,7 @@
 			<div class="sponsors">
 				<h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
 				<div class="text-center tmp" style="font-size: 1.5vw; color: #999">
-					<a target="_blank" href="./docs/ACD-chennai-sponsorship-deck.pdf" disabled
-					>View our sponsorship deck</a
-					>
+					<a target="_blank" href="./docs/ACD-chennai-sponsorship-deck.pdf" disabled>View our sponsorship deck</a>
 					or email us at
 					<i><b style="font-size: 2vw; color: #000"><a href="mailto:info@awsugchn.in">info@awsugchn.in</a></b></i>
 				</div>
@@ -477,7 +480,9 @@
 						<div class="flex-it">
 							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
-									<div class="agilisium"><a href="https://www.agilisium.com" target="_blank">agilisium</a></div>
+									<div class="agilisium">
+										<a href="https://www.agilisium.com" target="_blank">agilisium</a>
+									</div>
 								</div>
 							</div>
 							<div style="padding-left: 25px">
@@ -499,7 +504,9 @@
 						<div class="flex-it">
 							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
-									<div class="chargebee"><a href="https://www.chargebee.com/" target="_blank">chargebee</a></div>
+									<div class="chargebee">
+										<a href="https://www.chargebee.com/" target="_blank">chargebee</a>
+									</div>
 								</div>
 							</div>
 							<div style="padding-left: 25px">
@@ -515,11 +522,12 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="flex-it">
 							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
-									<div class="eightkmiles"><a href="https://8kmiles.com/" target="_blank">eightkmiles</a></div>
+									<div class="eightkmiles">
+										<a href="https://8kmiles.com/" target="_blank">eightkmiles</a>
+									</div>
 								</div>
 							</div>
 							<div style="padding-left: 25px">
@@ -541,7 +549,9 @@
 						<div class="flex-it">
 							<div class="flex-it" style="width: 85%;">
 								<div class="f1" style="width: 100%;">
-									<div class="sumologic"><a href="https://sumologic.com" target="_blank">sumologic</a></div>
+									<div class="sumologic">
+										<a href="https://sumologic.com" target="_blank">sumologic</a>
+									</div>
 								</div>
 							</div>
 							<div style="padding-left: 25px">
@@ -562,7 +572,9 @@
 					<div class="cmnty">
 						<div class="flex-it">
 							<div class="f1">
-								<div class="konfhub"><a href="https://konfhub.com/" target="_blank">konfhub</a></div>
+								<div class="konfhub">
+									<a href="https://konfhub.com/" target="_blank">konfhub</a>
+								</div>
 							</div>
 							<div class="f1">
 								<div class="clockwork">
@@ -570,11 +582,13 @@
 								</div>
 							</div>
 							<div class="f1">
-								<div class="jetbrains"><a href="https://www.jetbrains.com" target="_blank">wwc</a>
+								<div class="jetbrains">
+									<a href="https://www.jetbrains.com" target="_blank">wwc</a>
 								</div>
 							</div>
 							<div class="f1">
-								<div class="wwc"><a href="https://www.womenwhocode.com/chennai" target="_blank">wwc</a>
+								<div class="wwc">
+									<a href="https://www.womenwhocode.com/chennai" target="_blank">wwc</a>
 								</div>
 							</div>
 						</div>
@@ -1039,6 +1053,23 @@
 	$(".countdown").jCounter({
 		date: '10 august 2019 09:00:00',
 		fallback: function() { console.log("count finished!") }
+	});
+
+	$(function () {
+		var btn = $('#button');
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 300) {
+				btn.addClass('show');
+			} else {
+				btn.removeClass('show');
+			}
+		});
+
+		btn.on('click', function (e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop: 0}, '300');
+		});
 	});
 </script>
 </body>
