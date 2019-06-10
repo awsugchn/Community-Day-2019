@@ -48,13 +48,10 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123754553-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-
 		function gtag() {
 			dataLayer.push(arguments);
 		}
-
 		gtag('js', new Date());
-
 		gtag('config', 'UA-123754553-1');
 	</script>
 </head>
@@ -409,8 +406,14 @@
 						<tr>
 							<td class="td-time">11:30 AM - 12:00 PM</td>
 							<td></td>
-							<td></td>
-							<td></td>
+							<td colspan="3" class="td-full-track font-normal">
+								Zero to Search in Minutes
+								</a>
+							</td>
+							<td colspan="3" class="td-full-track font-normal">
+								Diversity Program
+								</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="td-time">12:10 PM - 12:40 PM</td>
@@ -434,14 +437,34 @@
 						</tr>
 						<tr>
 							<td class="td-time">13:50 PM - 14:30 PM</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td colspan="3" class="td-full-track font-normal">
+								Become Thanos of the Lambda Land: Wield all the Infinity Stones Back to Talks,
+								<a href="https://www.linkedin.com/in/srushith/">
+									Srushith Repakula, Head of Engineering, KonfHub
+								</a>
+							</td>
+							<td colspan="3" class="td-full-track font-normal">
+								Serverless Growth: Stories from Scaling a Developer Platform,
+								<a href="https://www.linkedin.com/in/satwikhebbar/">
+									Satwik Hebbar, Director Of Engineering, Freshworks
+								</a>
+							</td>
+							<td colspan="3" class="td-full-track font-normal">
+								Rapid development, Continuous Integration and Delivery (CI/CD) for Chatbots on AWS,
+								<a href="https://www.linkedin.com/in/omuthu/">
+									Muthukumar Oman, AWS Cloud Architect, Agilisium Consulting
+								</a>
+							</td>
 						</tr>
 						<tr>
 							<td class="td-time">14:40 PM - 15:20 PM</td>
 							<td></td>
-							<td></td>
+							<td colspan="3" class="td-full-track font-normal">
+								Postman's Journey from Data Warehouse to Data Lake,
+								<a href="https://www.linkedin.com/in/dushyant1/">
+									Dushyant Chillale, Engineering Manager, Postman
+								</a>
+							</td>
 							<td></td>
 						</tr>
 						<tr>
@@ -1004,7 +1027,6 @@
 	var latt = 13.0166902;
 	var lngg = 80.2049061;
 	var venue = "Hilton Chennai";
-
 	function setCoords(latt, lngg, venue) {
 		this.latt = latt;
 		this.lngg = lngg;
@@ -1013,7 +1035,6 @@
 		initMap();
 		$(this).addClass("hello");
 	}
-
 	function initMap() {
 		var uluru = {lat: latt, lng: lngg};
 		var map = new google.maps.Map(document.getElementById("map"), {
@@ -1059,10 +1080,8 @@
 		date: '10 august 2019 09:00:00',
 		fallback: function() { console.log("count finished!") }
 	});
-
 	$(function () {
 		var btn = $('#button');
-
 		$(window).scroll(function () {
 			if ($(window).scrollTop() > 300) {
 				btn.addClass('show');
@@ -1070,7 +1089,6 @@
 				btn.removeClass('show');
 			}
 		});
-
 		btn.on('click', function (e) {
 			e.preventDefault();
 			$('html, body').animate({scrollTop: 0}, '300');
