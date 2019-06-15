@@ -159,7 +159,7 @@
 @media only screen and (min-width : 768px) {
 	.imgbox {
     float: left;
-    height: 155px;
+    height: 140px;
     width: 640px;
     margin: 30px;
     padding: 30px;
@@ -174,7 +174,7 @@
   }
   .spon-community{
     float: left;
-    height: 120px;
+    height: 100px;
     width: 200px;
     margin: 20px;
     padding: 10px;
@@ -183,7 +183,7 @@
 }
 .spon-community1{
     float: left;
-    height: 120px;
+    height: 100px;
     width: 200px;
     margin: 20px;
     padding: 10px;
@@ -196,8 +196,8 @@
 @media only screen and (min-width : 992px) {
 	.imgbox {
     
-    height: 100px;
-    width: 300px;
+		min-width: 100%;
+    height: auto;
     margin: 10px;
     padding: 20px;
     border:0.5px solid #a6a6a6;
@@ -211,22 +211,24 @@
   }
   .spon-community{
     float: left;
-    height: 120px;
-    width: 250px;
-    margin: 20px;
-    padding: 20px;
+    height: 90px;
+    width: 260px;
+    margin: 30px;
+    padding: 10px;
     border:0.5px solid #a6a6a6;
 	background:#fff;
 }
-.spon-community1{
+.spon-wwc{
     float: left;
-    height: 120px;
-    width: 200px;
-    margin: 20px;
-    padding: 20px;
+    height: 80px;
+    width: 260px;
+    margin: 30px;
+    padding: 10px;
     border:0.5px solid #a6a6a6;
-	background:#fff;
+	background:#000;
+	
 }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -248,7 +250,7 @@
   }
   .spon-community{
     float: left;
-    height: 130px;
+    height: 100px;
     width: 350px;
     margin: 20px;
     padding: 20px;
@@ -379,9 +381,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="section section-2"  style="background-color: #ffffff">
+
+	<section id="com_info"></section>
+	<div class="section section-2"  style="background-color: #ffffff" >
 		<div class="container flex-it">
-			<div class="f1 left" id="com_info">
+			<div class="f1 left" >
 				<div class="left_in text-justify">
 					<h4 class="headin-ttl">
 						WHO WE ARE?
@@ -534,7 +538,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="section section-3" id="venues" style="background-color: #ffffff">
+
+
+<section id="venues"></section>
+	<div class="section section-3" style="background-color: #ffffff"  >
 		<div class="container flex-it">
 			<div class="left f1 flex-it">
 				<h4 class="headin-ttl">
@@ -567,13 +574,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="section section-4" id="agenda" style="background-color: #eeeeee">
+
+	<section id="agenda"></section>
+	<div class="section section-4"  style="background-color: #eeeeee">
 			<div class="container">
 				<div class="sponsors">
 					<h4 class="main-heading-ttl text-center">Agenda</h4>
 					<div class="col-lg-12 col-sm-12 col-md-12">
 						<table class="table table-striped table-dark table-bordered">
+								
 							<thead class="thead-dark">
+									
 							<tr>
 								<th class="td-time table-header">Time</th>
 								<th colspan="3" class="td-full-track table-header">Session Details</th>
@@ -581,8 +592,8 @@
 							</thead>
 							<tbody>
 							<tr>
-								<td style="border: none"></td>
-								<td colspan="3" class="td-full-track">Morning Sessions</td>
+								
+								<td colspan="4" class="td-full-track">Morning Sessions</td>
 							</tr>
 							<tr>
 								<td class="td-time">08:00 AM - 09:00 AM</td>
@@ -592,7 +603,7 @@
 								<td class="td-time">09:00 AM - 10:00 AM</td>
 								<td colspan="3" class="td-full-track font-normal">
 									Keynote: Serverless Beyond Functions: Building Modern Applications,
-									<a href="https://www.linkedin.com/in/dpoccia/" target="_blank">
+									<a href="https://www.linkedin.com/in/dpoccia/">
 										Danilo Poccia, Principal Evangelist, Serverless at Amazon Web Services.
 									</a>
 								</td>
@@ -628,12 +639,12 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td class="td-time">12:40 PM - 13:50 PM</td>
+								<td  class="td-time">12:40 PM - 13:50 PM</td>
 								<td colspan="3" class="td-full-track">Lunch and Networking</td>
 							</tr>
 							<tr>
-								<td style="border: none"></td>
-								<td colspan="3" class="td-full-track">Post Lunch Sessions</td>
+								
+								<td colspan="4" class="td-full-track">Post Lunch Sessions</td>
 							</tr>
 							<tr>
 								<td class="td-track">Tracks</td>
@@ -642,11 +653,11 @@
 								<td class="td-track">Track 3</td>
 							</tr>
 							<tr>
-								<td class="td-time">13:50 PM - 14:30 PM</td>
+								<td class="td-time " style="text-align: center; vertical-align: middle;" >13:50 PM - 14:30 PM</td>
 								<td>
 								<div>
-										<p class="text-justify">Become Thanos of the Lambda Land: Wield all the Infinity Stones Back to Talks</p>
-										<p ><a href="https://www.linkedin.com/in/srushith/" target="_blank">Srushith Repakula, Head of Engineering, KonfHub</a></p>
+										<p class="text-justify " style="font-size: 18px">Become Thanos of the Lambda Land: Wield all the Infinity Stones Back to Talks</p><br>
+										<p style="font-size: 13px"><a href="https://www.linkedin.com/in/srushith/" target="_blank"> - Srushith Repakula, Head of Engineering, KonfHub</a></p>
 									  </div>
 								</td>			
 								
@@ -690,7 +701,7 @@
 		<div class="container">
 		
 			  <div class="col-md-12">
-				<h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
+				
 				<div class="text-center tmp" style="font-size: 1.5vw; color: #999">
 					<a target="_blank" href="./docs/ACD-chennai-sponsorship-deck.pdf" disabled>View our sponsorship deck</a>
 					or email us at
@@ -703,7 +714,7 @@
 		  <div class="container">
 			
 			  <div class="col-md-12">
-				<div class="flex-it mt-5"><h3>Platinum</h3></div>
+				<div class="flex-it mt-5"><h3>Platinum - Sponsors</h3></div>
 			  </div>
 		  </div>
 
@@ -731,7 +742,7 @@
 		  <div class="container">
 			
 			<div class="col-md-12">
-			  <div class="flex-it"><h3>Gold</h3></div>
+			  <div class="flex-it"><h3>Gold - Sponsors</h3></div>
 			</div>
 		</div>
 
@@ -759,7 +770,7 @@
 		<div class="container">
 			
 			<div class="col-md-12">
-			  <div class="flex-it"><h3 >8KMiles</h3></div>
+			  <div class="flex-it"><h3 >8KMiles - Sponsors</h3></div>
 			</div>
 		</div>
 
@@ -778,7 +789,7 @@
 				seamlessly integrate Identity Management, Big Data and Statutory compliance into their Cloud. 
 				All our customer engagements are driven by synergetic combination of our automation framework, 
 				deep expertise gathered over 350+ customer engagements, 
-				competencies with all major cloud platforms (including AWS and Azure) and over 100+ certiﬁed consultants.
+				competencies with all major cloud platforms (including AWS and Azure) and over 100+ certified consultants.
 			  </p>
 			</div>		  
 		</div>
@@ -788,18 +799,18 @@
 		  <div class="container">
 			
 			<div class="col-md-12">
-			  <div class="flex-it"><h3 >Silver</h3></div>
+			  <div class="flex-it"><h3 >Silver - Sponsors</h3></div>
 			</div>
 		</div>
 
 		<div class="container">
 		  
 			<div class="col-md-3 col-sm-12">
-					<a href="https://sumologic.com" target="_blank"><img src="images/spons/sumologic.png" class="img-fluid imgbox" alt="sumologic">
-			</a></div>
-			
+					<a href="https://sumologic.com" target="_blank"><img src="images/spons/SumoLogic_Logo_SumoBlue_RGB_@1x.png" class="img-fluid imgbox" style="margin-top: 20px;" alt="sumologic">
+			</a>
+		  </div>
 			<div class="col-md-9 col-sm-12">
-					<div class="mt-5"><h3></h3></div>
+					<div class=""><h3></h3></div>
 			  <p class=" text-justify" >
 				Sumo Logic is the leading cloud-native, machine data analytics platform that delivers continuous 
 				intelligence across the entire application lifecycle and stack. More than 1,600 customers around 
@@ -815,30 +826,40 @@
 			</div>
 		<div class="container">
 			  <div class="col-md-12">
-				<div class="flex-it"><h3>Community</h3></div>
+				<div class="flex-it"><h3>Community- Partners</h3></div>
 			  </div>
 		  </div>
 
-		  <div class="container">
-			  <div class="col-md-2 col-sm-4">
-					<a href="https://konfhub.com/" target="_blank"><img src="images/spons/konfhub.png" class="img-fluid  spon-community" alt="konfhub">
-			  </a></div>			
-			  <div class="col-md-2 col-sm-4">
-					<a href="https://www.clockworkpod.com/" target="_blank"><img src="images/spons/clockwork.png" class="img-fluid  spon-community" alt="clockwork">
-			  </a></div>
-			  <div class="col-md-3 col-sm-4">
-					<a href="https://sixtyonesteps.com/" target="_blank"><img src="images/spons/Sixty-One-Steps.png" class="img-fluid  spon-community" alt="SixtyOneSteps">
-				 </a> </div>
-			  <div class="col-md-2 col-sm-6 ">
-					<a href="https://www.jetbrains.com/" target="_blank"><img src="images/spons/jetbrains.png" class="img-fluid  spon-community" alt="jetbrains">
-			 </a> </div>
-			  <div class="col-md-3 col-sm-6 ">
-					<a href="https://www.womenwhocode.com/chennai" target="_blank"><img src="images/spons/wwc.png" class="img-fluid  spon-community1" alt="wwc">
-			  </a></div>
+		<div class="container">
+				<div class="col-md-3 col-sm-3">
+					  <a href="https://konfhub.com/" target="_blank"><img src="images/spons/konfhub.png" class="img-fluid  spon-community" alt="konfhub">
+				</a></div>			
+				<div class="col-md-3 col-sm-3">
+					  <a href="https://www.clockworkpod.com/" target="_blank"><img src="images/spons/clockwork.png" class="img-fluid  spon-community" alt="clockwork">
+				</a></div>
+				<div class="col-md-3 col-sm-3">
+					  <a href="https://sixtyonesteps.com/" target="_blank"><img src="images/spons/Sixty-One-Steps.png" class="img-fluid  spon-community" alt="SixtyOneSteps">
+				   </a> </div>
+				   <div class="col-md-3 col-sm-3 ">
+					</div>
+				
+			</div>
+			<div class="container">
+					
+					<div class="col-md-3 col-sm-3">
+							<a href="https://www.jetbrains.com/" target="_blank"><img src="images/spons/jetbrains.png" class="img-fluid  spon-community" alt="jetbrains">
+					 </a> </div>
+					<div class="col-md-3 col-sm-3 ">
+						  <a href="https://www.womenwhocode.com/chennai" target="_blank"><img src="images/spons/wwc.png" class="img-fluid  spon-community" alt="wwc">
+					</a></div>
+					
+					<div class="col-md-6 col-sm-6 ">
+						</div>
+				</div>
 			  
 		  </div>
+	
 
-	</div>
 	<div class="section section-8" style="background-color: #eeeeee" id="speakers">
 		<div class="container">
 			<div class="speakers">
