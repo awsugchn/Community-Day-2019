@@ -1518,10 +1518,6 @@ div#myModal .modal-body {
 #page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).intel {
   background-image: url(../images/spons/intel.png);
 }
-/* line 657, ../sass/shared/_home.scss */
-#page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).clockwork {
-  background-image: url(../images/spons/clockwork.png);
-}
 /* line 660, ../sass/shared/_home.scss */
 #page .section-5 .sponsors .cats .flex-it .f1 > div:not(.head).moengage {
   background-image: url(../images/spons/moengage.png);
@@ -2379,4 +2375,3 @@ i.icon.large {
   opacity: 1;
   visibility: visible;
 }
-
