@@ -2412,3 +2412,59 @@ i.icon.large {
   width: 100%;
   text-align: center;
 }
+
+@media only screen and (min-width : 360px) {
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 411px) {
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 375px){
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 320px){
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 1920px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
