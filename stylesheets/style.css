@@ -2375,3 +2375,96 @@ i.icon.large {
   opacity: 1;
   visibility: visible;
 }
+
+.speakers-img {
+  padding: 10px;
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+}
+
+.lb-col, .lb-xlarge-1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lb-col {
+  position: relative;
+  float: left;
+}
+
+.lb-img {
+  display: block;
+  margin: 15px 0;
+  line-height: 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.align-center {
+  text-align: center;
+  width: 20%;
+  display: inline-block;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width : 360px) {
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 411px) {
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 375px){
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 320px){
+  .align-center {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 1920px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .align-center {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+  }
+}
