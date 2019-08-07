@@ -1817,6 +1817,10 @@ div#myModal .modal-body {
 #page .section-6 .volunteers .vl-i .person[data-fname="Mohan"] .img {
   background-image: url(../images/vols/mohan.jpg);
 }
+/* line 912, ../sass/shared/_home.scss */
+#page .section-6 .volunteers .vl-i .person[data-fname="Suthan"] .img {
+  background-image: url(../images/vols/suthan.jpg);
+}
 #page .section-6 .volunteers .vl-i .person[data-fname="Mageshwaran"] .img {
   background-image: url(../images/vols/magesh.jpg);
 }
