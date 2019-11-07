@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Térkép</title>
+		<style>
+			#map {
+				height: 100%;
+				width: 100%;
+			}
+
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+
+			.com-box {
+				padding: 8px;
+				width: 240px;
+			}
+
+			:link, :visited {
+				color: #1a73e8;
+				outline: 0;
+				text-decoration: none;
+			}
+
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKei7EnlSDmE4NKMG5RD6kmyMR4t08a1A&v=3.exp"
+		        type="text/javascript"></script>
+		<script src="http://cdn.sobekrepository.org/includes/gmaps-markerwithlabel/1.9.1/gmaps-markerwithlabel-1.9.1.js"
+		        type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+				var bp = {lat: 21.507935, lng: 79.0865583};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 5,
+					center: bp
+				});
+				var locations = [
+					['AWS User Group - Chennai', 13.08784, 80.27847, "https://www.meetup.com/awsusergroup-chennai/", "Chennai, India"],
+					['AWS User Group - Bengaluru', 12.972442, 77.580643, "https://www.meetup.com/awsugblr/", "Bangalore, India"],
+					['Ahmedabad Amazon AWS Cloud Meetup', 23.033863, 72.585022, "https://www.meetup.com/Ahmedabad-Amazon-AWS-Cloud-Meetup/", "Ahmedabad, India"],
+					['AWS Bhubaneswar Community', 20.296059, 85.824539, "https://www.meetup.com/AWS-Bhubaneswar-Meetup-Group/", "Bhubaneswar, India"],
+					['Amazon Web Services (AWS) Delhi', 28.644800, 77.216721, "https://www.meetup.com/AmazonAWS-Delhi/", "Delhi, India"],
+					['Amazon Web Services (AWS) User Group - Hyderabad', 17.387140, 78.491684, "https://www.meetup.com/awsughyd/", "Hyderabad, India"],
+					['AWS User Group Kochi', 9.939093, 76.270523, "https://www.meetup.com/awsugkochi/", "Kochi, India"],
+					['AWS Kolkata Group', 22.572645, 88.363892, "https://www.meetup.com/awsugkol/", "Kolkata, India"],
+					['AWS User Group Mumbai', 19.076090, 72.877426, "https://www.meetup.com/awsugmum/", "Mumbai, India"],
+					['Pune AWS and Cloud User Group', 18.516726, 73.856255, "https://www.meetup.com/puneawsug/", "Pune, India"],
+					['Surat AWS User Group', 21.170240, 72.831062, "https://www.meetup.com/surat-aws-user-group/", "Surat, India"],
+					['Amazon Web Services (AWS) User Group Thiruvananthapuram', 8.524139, 76.936638, "https://www.meetup.com/awsug-tvm/", "Thiruvananthapuram, India"],
+					['AWS User Group - Vizag', 17.690474, 83.231049, "https://www.meetup.com/AWS-User-Group-Vizag/", "Visakhapatnam, India"],
+				];
+
+				for (var i = 0; i < locations.length; i++) {
+					var item = locations[i];
+					var marker = new MarkerWithLabel({
+						position: {lat: item[1], lng: item[2]},
+						map: map,
+						icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+						labelAnchor: new google.maps.Point(item[4], item[5]),
+						labelInBackground: false
+					});
+
+					var url = item[3];
+					var title = item[0];
+					var loc = item[4];
+					var infoWindow = new google.maps.InfoWindow();
+
+					var content = "<div><a href="+url+" target='_blank'>"+
+						"<b>"+title+"</b>"+
+						"</div></a>"+
+						"<span>"+loc+"</span>"+
+						"</div>";
+
+					google.maps.event.addListener(marker, 'click', (function(marker, content, i) {
+						return function() {
+							infoWindow.setContent(content);
+							infoWindow.open(map, marker);
+						}
+					})(marker, content, i));
+				}
+			}
+			initMap();
+		</script>
+	</body>
+</html>
