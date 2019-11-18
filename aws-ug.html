@@ -8,24 +8,20 @@
 				height: 100%;
 				width: 100%;
 			}
-
 			html, body {
 				height: 100%;
 				margin: 0;
 				padding: 0;
 			}
-
 			.com-box {
 				padding: 8px;
 				width: 240px;
 			}
-
 			:link, :visited {
 				color: #1a73e8;
 				outline: 0;
 				text-decoration: none;
 			}
-
 		</style>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKei7EnlSDmE4NKMG5RD6kmyMR4t08a1A&v=3.exp"
 		        type="text/javascript"></script>
@@ -55,29 +51,25 @@
 					['Amazon Web Services (AWS) User Group Thiruvananthapuram', 8.524139, 76.936638, "https://www.meetup.com/awsug-tvm/", "Thiruvananthapuram, India"],
 					['AWS User Group - Vizag', 17.690474, 83.231049, "https://www.meetup.com/AWS-User-Group-Vizag/", "Visakhapatnam, India"],
 				];
-
 				for (var i = 0; i < locations.length; i++) {
 					var item = locations[i];
 					var marker = new MarkerWithLabel({
 						position: {lat: item[1], lng: item[2]},
 						map: map,
-						icon: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+						icon: "/images/awslogo.png",
 						labelAnchor: new google.maps.Point(item[4], item[5]),
 						labelInBackground: false
 					});
-
 					var url = item[3];
 					var title = item[0];
 					var loc = item[4];
 					var infoWindow = new google.maps.InfoWindow();
-
 					var content = "<div><a href="+url+" target='_blank'>"+
 						"<b>"+title+"</b>"+
 						"</div></a>"+
 						"<span>"+loc+"</span>"+
 						"</div>";
-
-					google.maps.event.addListener(marker, 'click', (function(marker, content, i) {
+					google.maps.event.addListener(marker, 'mouseover', (function(marker, content, i) {
 						return function() {
 							infoWindow.setContent(content);
 							infoWindow.open(map, marker);
